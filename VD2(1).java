@@ -21,7 +21,7 @@ import java.awt.Font;
 import java.awt.*;
 import java.math.*;
 
-class City{
+class City{ //Xinyu Tu
     String name = "";
     int x = 0;
     int y = 0;
@@ -106,7 +106,7 @@ class City{
     }
 }
 
-class Edge{
+class Edge{ //Xinchuan Wang
     City from;
     City to;
     double w = 1;
@@ -151,7 +151,7 @@ class Road{
     }
 }
 
-public class VD2 extends JFrame{
+public class VD2 extends JFrame{//Xinyu Tu
     private int width = 1250;
     private int height = 850;
     static  int gridWidth = 15;
@@ -387,7 +387,7 @@ public class VD2 extends JFrame{
         });
     }
 
-    public void init(){
+    public void init(){//Xinchuan Wang
         gridWidth = (height - 70) / colNumber;
         gridheight = (height - 70) / rowNumber;
         System.out.println(colNumber);
@@ -499,7 +499,7 @@ public class VD2 extends JFrame{
         allDistance();
     }
 
-    public void paint(Graphics g) {
+    public void paint(Graphics g) {//Xinyu Tu
         super.repaint();
 
         Image image = createImage(width, height);
@@ -664,7 +664,7 @@ public class VD2 extends JFrame{
         }
     }
 
-    private void contourLine(City start){
+    private void contourLine(City start){//Xinchuan Wang
         HashMap<Double, ArrayList<City>> map = new HashMap<Double, ArrayList<City>>();
         dij.put(start, map);
         int y = rnd.nextInt(16,235);
@@ -734,7 +734,7 @@ public class VD2 extends JFrame{
         return null;
     }
 
-    private void allDistance(){
+    private void allDistance(){//Xinyu Tu
         topCities.clear();
         int colorIndex = 0;
         for(int i = 0;i<colNumber;i++){
