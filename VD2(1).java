@@ -542,14 +542,14 @@ public class VD2 extends JFrame{//Xinyu Tu
                         City.redis, City.redis);
                 }
                 
-                /*
+                
                 if(cities[i][j].distance != Integer.MAX_VALUE){
                     graphics.setColor(Color.BLACK);
                     graphics.setFont(new Font("Times New Roman",Font.PLAIN,10));
                     graphics.drawString(String.valueOf(cities[i][j].distance), 
                         cities[i][j].centerX(), cities[i][j].centerY());
                 }
-                */
+                
             }
         }
 
